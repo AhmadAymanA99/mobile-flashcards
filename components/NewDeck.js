@@ -18,7 +18,12 @@ const NewDeck = ({ navigation }) => {
                     saveDeckTitle(name).then(
                         () => {
                             console.log(Object.keys(decks))
-                            navigation.navigate('home')
+                            navigation.navigate('deck', {
+                                item: {
+                                    title: name,
+                                    questions: []
+                                }
+                            })
                             setName('')
                         })
                 }} />

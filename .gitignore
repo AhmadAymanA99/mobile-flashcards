@@ -10,5 +10,7 @@ npm-debug.*
 web-build/
 web-report/
 
+.mobile-flashcards.txt
+
 # macOS
 .DS_Store
